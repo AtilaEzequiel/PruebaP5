@@ -6,7 +6,7 @@ namespace PruebaP5.Controllers
 {
     public class PagoController : Controller
     {
-        public static List<Pago> pagoList = new List<Pago>();
+       public  static List<Pago> pagoList = new List<Pago>();
         public IActionResult Index()
         {
          
@@ -23,7 +23,7 @@ namespace PruebaP5.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Pago pag)
+        public async Task<IActionResult> Create(Pago pag)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace PruebaP5.Controllers
             {
                 return View();
             }
-        }
+        } 
 
 
        /* public async Task<IActionResult> Details(int cuit)
