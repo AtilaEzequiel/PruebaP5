@@ -6,7 +6,7 @@
         // public SelectList? CondIva { get; set; }
         // public string? PagoCondIva { get; set; }
 
-        public int Cuit { get; set; }
+        public double Cuit { get; set; }
 
         public string RazonSocial { get; set; }
         public string Domicilio { get; set; }
